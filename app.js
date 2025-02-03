@@ -1,14 +1,14 @@
-var person = {
-    name: 'Precious',
-    age: 26,
-    hobbies: ['sporting', 'cooking'],
-    role: [2, 'author']
-};
-person.role.push('admin');
-var favoriteActivities;
-favoriteActivities = ['sporting'];
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby);
+function add(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
+var combinedAges = add(30, 26);
+console.log(combinedAges);
+var combinedNames = add('Max', 'Anna');
+console.log(combinedNames);
