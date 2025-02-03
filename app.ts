@@ -2,11 +2,15 @@ const person:{
     name:string;
     age:number;
   hobbies: string[]
+  role:[number,string]
 } = {
     name: 'Precious',
     age: 26,
-   hobbies: ['sporting','cooking']
+   hobbies: ['sporting','cooking'],
+   role: [2,'author']
 };
+
+person.role.push('admin');
 let favoriteActivities :string[];
 favoriteActivities = ['sporting'];
 
