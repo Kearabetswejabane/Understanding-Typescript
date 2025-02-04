@@ -1,16 +1,7 @@
-function add(input1, input2, resultConversion) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number' || resultConversion === 'as-number') {
-        result = +input1 + +input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var combinedAges = add(30, 26, 'as-number');
-console.log(combinedAges);
-var combinedStringAges = add(30, 26, 'as-number');
-console.log(combinedStringAges);
-var combinedNames = add('Max', 'Anna', 'as-text');
-console.log(combinedNames);
+function printResult(num) {
+    console.log('result:' + num);
+}
+printResult(add(5, 12));
